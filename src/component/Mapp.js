@@ -17,7 +17,7 @@ function Mapp () {
 
     return (
         <>
-            <h1>{name};</h1><br/>
+            <h1>{name}</h1><br/>
             
             <MapContainer center={[userLatitude, userLongitude]} zoom={5} scrollWheelZoom={false}>
     <TileLayer

@@ -1,21 +1,25 @@
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import Container from 'react-bootstrap/Container'
 
 import Home from './component/Home'
 import Mapp from './component/Mapp'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/map/:name">
-          <Mapp />
-        </Route>
-      </Switch>
-    </Router>
+    <Container>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+              <Home />
+          </Route>
+          <Route path="/map/:name">
+            <Mapp />
+          </Route>
+        </Switch>
+      </Router>
+    </Container>
   );
 }
 
